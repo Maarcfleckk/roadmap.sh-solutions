@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregar Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Agregar el CSS de Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <title>Task tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-title">Task tracker</div>
+        <form id="task-create">
+            <!-- <input type="checkbox" name="" id="task-staus" title="Is it done?"> -->
+            <input type="text" name="" id="task-text" placeholder="Add a task" required>
+            <button type="submit"><i class="fa fa-plus"></i></button>
+        </form>
+        <div id="empty-task" class="task" data-task="-1">
+            <input type="checkbox"  title="Is it done?">
+            <p class="title">This is a task</p>
+            <button class="btn-delete"><i class="fa fa-trash-can"></i></button>
+        </div>
+        <div id="task-list"></div>
+        <button id="remove-all" class="d-none">Delete all</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

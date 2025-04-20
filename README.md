@@ -10,4 +10,6 @@
 
 - [Task tracker challenge](https://roadmap.sh/projects/task-tracker-js) | [Task tracker solution](https://github.com/Maarcfleckk/roadmap.sh-solutions/tree/main/frontend-projects/task-tracker)
 
+- [Custom Dropdown challenge](https://roadmap.sh/projects/custom-dropdown) | [Custom Dropdown solution](https://github.com/Maarcfleckk/roadmap.sh-solutions/tree/main/frontend-projects/custom-dropdown)
+
 ## Backend

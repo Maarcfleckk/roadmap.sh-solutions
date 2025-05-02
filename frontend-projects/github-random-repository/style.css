@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --main-color-1: #ccc;
+    --main-color-2: #ddd;
+    --main-color-3: #eee;
+    --main-color-4: #333;
+    --main-color-5: #000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+@keyframes rotate {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+.form-container{ max-width: 350px; margin: 50px auto 0; }
+#language { width: 100%; height: 40px; border-radius: 5px; padding: 10px; margin-bottom: 15px; }
+#state{ padding: 10px ; width: 100%; border: 1px solid #333; border-radius: 5px; font-size: 14px; margin-bottom: 15px; }
+#state.state-default{padding: 10px 10px 15px 10px;}
+#state.state-2{ position: relative; overflow: hidden; }
+#state.state-2::before{ content: ""; display: flex; align-items: center; justify-content: center; padding-top: 45px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #eee; }
+#state.state-2::after{ content: "\f110"; font-family: "FontAwesome"; animation: rotate 1s ease-in-out infinite forwards; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: fit-content; height: fit-content; }
+
+.button-container{ display: flex; flex-direction: column; gap: 15px; align-items: center; justify-content: center; }
+.btn{width: 100%; display: flex; background-color: #fff; border: 1px solid var(--main-color-4); border-radius: 5px; padding: 10px 20px; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; }
+.btn:hover{ background-color: var(--main-color-4); color: #fff;}
+#retry{border-color: red; background-color: red;color: #fff;}
+#retry:hover{ background-color: #333; border-color: #333;}
+
+#retry,
+#refresh{ display: none;}
+#retry.visible,
+#refresh.visible{ display: block;}
+
+/* REPO */
+#repo{}
+#repo .title{display: flex; justify-content: space-between; align-items: start;}
+#repo .title a{font-weight: 600; text-decoration: none; color: #333; margin-bottom: 10px; display: block;}
+#repo .description{margin-bottom: 15px; display: block;}
+#repo .btn-small{width: fit-content; padding: 4px 8px; font-size: 12px; color: #333; text-decoration: none; margin-left: auto;}
+#repo .btn-small:hover{color: #fff}
+#repo .ext-info{ display: flex; align-items: end; justify-content: space-between;}
+#repo .ext-info i{ font-family: "FontAwesome"; background-color: #ddd; border-radius: 100px; padding: 5px; font-size: 12px; margin-right: 5px; }

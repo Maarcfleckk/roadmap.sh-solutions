@@ -12,4 +12,6 @@
 
 - [Custom Dropdown challenge](https://roadmap.sh/projects/custom-dropdown) | [Custom Dropdown solution](https://github.com/Maarcfleckk/roadmap.sh-solutions/tree/main/frontend-projects/custom-dropdown)
 
+- [GitHub Random Repository](https://roadmap.sh/projects/github-random-repository) | [GitHub Random Repository](https://github.com/Maarcfleckk/roadmap.sh-solutions/tree/main/frontend-projects/github-random-repository)
+
 ## Backend

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="temperature-converter-container">
+        <h1>This is a temperature converter</h1>
+        <p>Enter the temperature, select units and submit!</p>
+        <form id="temperature-converter">
+            <input type="number" id="quantity" placeholder="0,00">
+            <select type="number" id="start-unit">
+                <option value="" selected disabled>From Unit</option>
+                <option value="K">Kelvin</option>
+                <option value="F">Farenheit</option>
+                <option value="C">Celsius</option>
+            </select>
+            <i class="fas fa-arrow-down"></i>
+            <select type="number" id="end-unit">
+                <option value="" selected disabled>To Unit</option>
+                <option value="K" class="end-options">Kelvin</option>
+                <option value="F" class="end-options">Farenheit</option>
+                <option value="C" class="end-options">Celsius</option>
+            </select>
+            <button type="button" id="convert" disabled>Convert</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

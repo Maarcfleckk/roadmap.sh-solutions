@@ -16,4 +16,6 @@
 
 - [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [Temperature Converter](https://github.com/Maarcfleckk/roadmap.sh-solutions/tree/main/frontend-projects/temperature-converter)
 
+- [Weather App](https://roadmap.sh/projects/weather-app) | [Weather App](https://github.com/Maarcfleckk/roadmap.sh-solutions/tree/main/frontend-projects/weather-app)
+
 ## Backend

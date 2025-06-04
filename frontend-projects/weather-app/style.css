@@ -14,3 +14,140 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(120deg, #e0f7fa, #b2ebf2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Container */
+.form-container {
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="text"],
+select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button#submit {
+    background-color: #00bcd4;
+    color: white;
+}
+
+button#clear {
+    background-color: #ffc107;
+    color: black;
+}
+
+button#refresh {
+    background-color: #4caf50;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Results */
+#results.show{
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+#results {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+#result-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#results h2 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 0.5rem;
+}
+
+/* Shared weather box layout */
+.weather-box {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.weather-box > div {
+    background-color: #e0f7fa;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Icons in weather data */
+.weather-box i {
+    margin-left: 0.5rem;
+    color: #ff9800;
+}
